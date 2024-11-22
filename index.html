@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -9,29 +9,47 @@
   </head>
   <body>
     <header>
-      <img class="header--logo" src="assets/images/logo.svg" alt="Logo" />
+      <div class="header--mobile-elements">
+        <img class="header--logo" src="assets/images/logo.svg" alt="Logo" />
+        <button id="btn--menu-open" class="menu--button">
+          <img
+            class="menu--icon"
+            src="assets/images/menu.svg"
+            alt="Open menu"
+          />
+        </button>
+        <button id="btn--menu-close" class="menu--button hidden">
+          <img
+            class="menu--icon"
+            src="assets/images/close.svg"
+            alt="Close menu"
+          />
+        </button>
+      </div>
       <nav class="header--nav">
         <ul class="nav--links">
           <li class="nav--link"><a href="#sobre">Sobre</a></li>
           <li class="nav--link"><a href="#processo">Processo</a></li>
           <li class="nav--link"><a href="#duvidas">Dúvidas</a></li>
           <li class="nav--link">
-            <button class="button button--primary">
+            <button class="button button-primary">
               <h6>Faça o Download</h6>
             </button>
           </li>
         </ul>
       </nav>
-      <button id="btn--menu-open" class="menu--button">
-        <img class="menu--icon" src="assets/images/menu.svg" alt="Open menu" />
-      </button>
-      <button id="btn--menu-close" class="menu--button hidden">
-        <img
-          class="menu--icon"
-          src="assets/images/close.svg"
-          alt="Close menu"
-        />
-      </button>
     </header>
+    <main class="content-grid">
+      <section class="hero full-width">
+        <div class="hero--gradiente full-width">
+          <h4>A cada 20 minutos alguém encontra o amor no Mega+.</h4>
+          <h6>
+            Aqui você faz conexões reais e escolhe quando e com quem deseja
+            compartilhar seus dados!
+          </h6>
+          <button class="button button-primary">Encontre Agora</button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
