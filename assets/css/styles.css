@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  min-height: 100svh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+/* Fonts */
+@font-face {
+  font-display: swap;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/lato-bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/lato-black.woff2") format("woff2");
+}
+
+/* Variables */
+:root {
+  /* Colors */
+  --c1: #cf2d2d;
+  --c2: #53354a;
+  --c3: #be2d2d;
+  --background-hero: linear-gradient(
+      90deg,
+      #53354a 0%,
+      rgba(83, 53, 74, 0.65) 47.24%,
+      rgba(83, 53, 74, 0) 100%
+    ),
+    url("../images/hero.png") 80% center/cover no-repeat;
+
+  /* Fonts */
+  --font: "Lato", sans-serif;
+  --h1: 700 6rem /1.2 var(--font);
+  --h2: 700 4rem /1.2 var(--font);
+  --h3: 700 3rem /1.2 var(--font);
+  --h4: 700 2rem /1.2 var(--font);
+  --h5: 700 1.5rem /1.2 var(--font);
+  --h6: 700 1.25rem /1.2 var(--font);
+  --body: 400 1rem /1.5 var(--font);
+  --button: 900 1rem /1.5 var(--font);
+  --caption: 400 1rem /1.5 var(--font);
+}
+
+/* fonts */
+html {
+  font-family: "Lato", sans-serif;
+}
+
+h1 {
+  font: var(--h1);
+}
+
+h2 {
+  font: var(--h2);
+}
+
+h3 {
+  font: var(--h3);
+}
+
+h4 {
+  font: var(--h4);
+}
+
+h5 {
+  font: var(--h5);
+}
+
+h6 {
+  font: var(--h6);
+}
+
+p {
+  font: var(--body);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: 32px;
+  height: 64px;
+  width: 100%;
+  padding-inline: 16px;
+  background-color: var(--c2);
+  box-shadow: 0 8px 16px hsl(0, 0%, 0%, 30%);
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+}
+
+.header--expandida {
+  height: 100vh;
+}
+
+/* Logo */
+.header--logo {
+  height: 32px;
+  margin: 16px 0;
+}
+
+/* Nav */
+.header--nav {
+  margin-top: 80px;
+  width: 100%;
+}
+
+.nav--links {
+  display: grid;
+  place-items: center;
+  gap: 16px;
+  padding-bottom: 88px;
+}
+
+.nav--links > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
+}
+.nav--link > * {
+  font: var(--h6);
+  text-align: center;
+  color: #fff;
+}
+
+/* Menu */
+.menu--button {
+  width: 64px;
+  height: 64px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#btn--menu-open > img,
+#btn--menu-close > img {
+  height: 100%;
+  width: 100%;
+}
