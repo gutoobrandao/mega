@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="privacidade.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:zoom="33.25"
+     inkscape:cx="12.015038"
+     inkscape:cy="12"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <path
+     d="M2.22004 2.21967C1.95377 2.48594 1.92957 2.9026 2.14742 3.19621L2.22004 3.28033L6.25461 7.3149C4.33262 8.66437 2.89614 10.6799 2.29925 13.0644C2.19867 13.4662 2.44287 13.8735 2.84468 13.9741C3.2465 14.0746 3.65377 13.8305 3.75436 13.4286C4.28383 11.3135 5.59149 9.53947 7.33453 8.39452L9.14416 10.2043C8.43665 10.9258 8.00037 11.9143 8.00037 13.0046C8.00037 15.2138 9.79123 17.0046 12.0004 17.0046C13.0908 17.0046 14.0792 16.5683 14.8008 15.8608L20.7201 21.7803C21.013 22.0732 21.4878 22.0732 21.7807 21.7803C22.047 21.5141 22.0712 21.0974 21.8533 20.8038L21.7807 20.7197L15.6672 14.6055L15.6684 14.604L14.4683 13.4061L11.5984 10.5368L11.6004 10.536L8.71914 7.65782L8.72037 7.656L7.58709 6.52549L3.2807 2.21967C2.98781 1.92678 2.51293 1.92678 2.22004 2.21967ZM10.2045 11.2655L13.7396 14.8006C13.2896 15.2364 12.6763 15.5046 12.0004 15.5046C10.6197 15.5046 9.50037 14.3853 9.50037 13.0046C9.50037 12.3287 9.76861 11.7154 10.2045 11.2655ZM12.0004 5.5C11.0001 5.5 10.0295 5.64807 9.11146 5.925L10.3485 7.16119C10.8843 7.05532 11.4368 7 12.0004 7C15.9235 7 19.3103 9.68026 20.2475 13.4332C20.3479 13.835 20.755 14.0794 21.1569 13.9791C21.5588 13.8787 21.8032 13.4716 21.7028 13.0697C20.5998 8.65272 16.6159 5.5 12.0004 5.5ZM12.1951 9.00928L15.9964 12.81C15.8946 10.7531 14.2476 9.10764 12.1951 9.00928Z"
+     fill="black"
+     id="path1"
+     style="fill:#cf2d2d;fill-opacity:1" />
+</svg>

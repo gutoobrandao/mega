@@ -67,6 +67,7 @@ li {
   --c1: #cf2d2d;
   --c2: #53354a;
   --c3: #be2d2d;
+  --c4: #903749;
   --background-hero: linear-gradient(
       90deg,
       #53354a 0%,
@@ -91,6 +92,7 @@ li {
 /* fonts */
 html {
   font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -136,6 +138,7 @@ p {
   border: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  width: fit-content;
 }
 
 .button-primary {
@@ -143,18 +146,16 @@ p {
 }
 
 .button-primary:hover {
-  background-color: #903749;
+  filter: brightness(1.2) saturate(1.5);
 }
 
 .button-secondary {
-  background-color: #53354a;
-  display: flex;
-  align-items: center;
-  gap: 16px;
+  background-color: #fff;
+  color: var(--c2);
 }
 
 .button-secondary:hover {
-  background-color: #cf2d2d;
+  color: var(--c1);
 }
 
 /* Header */
@@ -245,6 +246,7 @@ header {
       var(--content-max-width)
     )
     [content-end] minmax(var(--padding-inline), 1fr) [full-width-end];
+  padding-block-end: 126px;
 }
 
 .content-grid > :not(.full-width) {
@@ -254,7 +256,7 @@ header {
 .content-grid > .full-width {
   grid-column: full-width;
   display: grid;
-  grid-template-columns: inherit;
+  /* grid-template-columns: inherit; */
 }
 
 .section-title {
@@ -268,7 +270,7 @@ header {
 }
 
 /* Hero */
-.hero {
+#hero {
   height: 100vh;
   background-image: url(../images/hero.png);
   background-size: cover;
@@ -295,8 +297,8 @@ header {
   padding: 40px 16px;
 }
 
-/* Sobre */
-.sobre {
+/* Section Sobre */
+#sobre {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -313,5 +315,143 @@ header {
 }
 
 .sobre-card-icon {
-  fill: var(--c1);
+  height: 48px;
+}
+
+/* Section Processo */
+.processo-card {
+  max-width: 300px;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  column-gap: 24px;
+  padding-block: 16px;
+  margin: 2rem auto;
+}
+
+.processo-card-number {
+  background-color: #cf2d2d;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  grid-row: 1/3;
+}
+
+.processo-card > h5,
+.processo-card > p {
+  grid-column: 2/3;
+  margin-bottom: 8px;
+}
+
+/* Section Depoimentos */
+#depoimentos {
+  background-color: var(--c1);
+  padding-block: 32px;
+  color: #fff;
+
+  > * {
+    padding-inline: 16px;
+  }
+
+  > .button-secondary {
+    margin-block-start: 3rem;
+  }
+}
+
+.carousel {
+  display: flex;
+  gap: 1rem;
+  overflow: scroll;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.carousel--depoiment {
+  display: grid;
+  gap: 2rem;
+  background-color: #fff;
+  border-radius: 32px;
+  color: #000;
+  padding: 24px;
+  min-width: 300px;
+}
+
+.testimonials-icons {
+  justify-self: end;
+}
+
+.carousel--profile {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carousel--picture {
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+}
+
+/* Section Download */
+#download > .button {
+  margin-bottom: 48px;
+
+  > img {
+    height: 2rem;
+  }
+}
+
+.button-download {
+  background-color: var(--c2);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &:hover {
+    background-color: var(--c1);
+  }
+}
+
+/* Footer */
+footer {
+  background-color: var(--c2);
+  display: grid;
+  place-items: center;
+  gap: 48px;
+  padding: 88px 0;
+}
+
+.footer-logo {
+  height: 68px;
+}
+
+.button-footer {
+  background-color: var(--c2);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  font: var(--h5);
+  text-transform: capitalize;
+  color: #fff;
+
+  &:hover {
+    color: var(--c1);
+  }
+
+  > svg {
+    height: 2rem;
+    fill: currentColor;
+    transition: fill 0.3s ease;
+  }
 }
