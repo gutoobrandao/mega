@@ -1,5 +1,10 @@
 "use strict";
 
+function init() {
+  responsiveMenu();
+  slider();
+}
+
 function responsiveMenu() {
   const header = document.querySelector("header");
   const btnOpen = document.querySelector("#btn--menu-open");
@@ -18,4 +23,30 @@ function responsiveMenu() {
   });
 }
 
-responsiveMenu();
+function slider() {
+  const carousel = document.querySelector(".carousel");
+  const indicators = document.querySelectorAll(".dots--dot");
+
+  function updateIndicators(activeIndex) {
+    indicators.forEach((indicator, index) => {
+      indicator.classList.toggle("dot--active", index === activeIndex);
+    });
+  }
+
+  carousel.addEventListener("scroll", () => {
+    const index = Math.round(carousel.scrollLeft / carousel.offsetWidth);
+    updateIndicators(index);
+  });
+
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener("click", () => {
+      const slideWidth = carousel.offsetWidth;
+      carousel.scrollTo({
+        left: index * slideWidth,
+        behavior: "smooth",
+      });
+    });
+  });
+}
+
+init();
